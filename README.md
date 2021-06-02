@@ -10,6 +10,7 @@ Key-chars:
 - r: return (returning from break)
 - m: message (log message or note)
 - s: shutdown (gives 30 seconds before forcing shutdown)
+
 Any string(s) following the key-char will be logged as a message or note.\
 Saves all logs as CSV files named for the date in a `Logs` folder in the user's `Documents` folder.\
 CSV format:
