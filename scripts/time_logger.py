@@ -1,9 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-Logging Script
-spade-as-in-ace
-
+Basic Time-Logging Script
 """
 from datetime import datetime as dt
 from os import system
