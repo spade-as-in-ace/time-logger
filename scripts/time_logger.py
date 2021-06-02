@@ -16,7 +16,7 @@ def main():
     time = dt.now()
     file_path = f"{LOG_PATH}\\{time.strftime('%d-%m-%Y')}.csv"
     log_file = open(file_path, "a")
-    log_file.write("startup, {time.strftime('%H:%M:%S')}")
+    log_file.write(f"startup, {time.strftime('%H:%M:%S')}")
     log_file.close()
 
     while True:
