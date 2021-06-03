@@ -19,7 +19,8 @@ event, time, message
 ```
 
 ## To Start
-Can run with
+Before running, make sure you have created a `Logs` folder in your `Documents` folder.\
+The script can be run with
 ```batch
 C:\Path\to\python.exe C:\path\to\time_logger.py
 ```
