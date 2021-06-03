@@ -25,7 +25,7 @@ C:\Path\to\python.exe C:\path\to\time_logger.py
 ```
 (Files may not be on C drive)
 
-To use Windows Task Scheduler to autostart upon login, open Task Scheduler, click `Create New Task` and name it something appropriate.\
+To use Windows Task Scheduler to autostart up toon login, open Task Scheduler, click `Create New Task`, and name it something appropriate.\
 Set the trigger to be `At log on`.\
 Make the action `Start a program`. Put the path to `python.exe` in the `Program/script` spot.\
 In the `Add arguments` spot add the path to `time-logger.py`.\
