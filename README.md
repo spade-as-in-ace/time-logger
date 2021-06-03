@@ -17,3 +17,18 @@ CSV format:
 ```
 event, time, message
 ```
+
+## To Start
+Can run with
+```batch
+C:\Path\to\python.exe C:\path\to\time_logger.py
+```
+(Files may not be on C drive)
+
+To use Windows Task Scheduler to autostart upon login, open Task Scheduler, click `Create New Task` and name it something appropriate.\
+Set the trigger to be `At log on`.\
+Make the action `Start a program`. Put the path to `python.exe` in the `Program/script` spot.\
+In the `Add arguments` spot add the path to `time-logger.py`.\
+Change `Conditions` so that it executes regardless of whether machine is plugged in or running off battery.
+
+The time-logger terminal should open on launch.
