@@ -10,14 +10,13 @@ from os.path import exists, expanduser
 
 DATE_FORMAT = "%d-%m-%Y"
 TIME_FORMAT = "%H:%M:%S"
-DELIMITER = ","
+DELIMITER = ','
 
 LOG_PATH = f"{expanduser('~')}\\Documents\\logs"
 KEYS = {'b': "break", 'l': "lunch", 'r': "return", 'm': "message", 'q': "quit", 's': "shutdown"}
 
 
 def main():
-    global LOG_PATH
     if not exists(LOG_PATH):
         mkdir(LOG_PATH)
     time = dt.now()
