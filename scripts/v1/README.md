@@ -3,7 +3,7 @@ Simple script for logging events on Windows machines.
 
 ## Usage
 This was written to run in the restrictive Windows environment common to company-issued boxes.\
-Configure via OS settings to launch the scripts on startup/log-in and on desired key-combinations (see [Setup][Setup]).
+Configure via OS settings to launch the scripts on startup/log-in and on desired key-combinations (see [Setup](Setup)).
 
 Saves all logs by default as CSV files named for the date in a `logs` folder in the user's `Documents` folder.\
 CSV format:
