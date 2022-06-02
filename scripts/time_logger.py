@@ -32,10 +32,10 @@ def main():
 
         if time.strftime("%d-%m-%Y") != log_file.name[-14:-4]:
             log_file.close()
-            file_path = f"{LOG_PATH}\\{time.strftime('%d-%m-%Y')}.csv"
+            file_path = f"{LOG_PATH}\\{time.strftime(DATE_FORMAT)}.csv"
             log_file = open(file_path, 'a')
 
-        time = time.strftime("%H:%M:%S")
+        time = time.strftime(TIME_FORMAT)
 
         if key[0] in KEYS:
             if key[0] == 's':
