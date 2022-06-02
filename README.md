@@ -1,35 +1,16 @@
 # Time Logger
-Simple script for logging work hours
+Simple script for logging events on Windows machines.
+
+## Versions
+This project has two versions, `v0` and `v1`.\
+`v0` launches a console that remains open/running until closed and requires simple commands to be entered for logging.\
+`v1` is based entirely on trigger-scripts that must be launched (e.g. by way of keyboard-shortcut) to log an event.
 
 ## Usage
-This was written to run in the restrictive Windows environment common to company-issued boxes.\
-Configure via OS settings to launch the script on startup/log-in.\
-Key-chars:
-- b: break (meant for short breaks)
-- l: lunch (lunch breaks)
-- r: return (returning from break)
-- m: message (log message or note)
-- s: shutdown (gives 30 seconds before forcing shutdown)
+Read the relevant `README.md`s for each version.\
+Both versions necessitate using Windows Task Scheduler to varying degrees.
 
-Any string(s) following the key-char will be logged as a message or note.\
-Saves all logs as CSV files named for the date in a `Logs` folder in the user's `Documents` folder.\
-CSV format:
-```
-event, time, message
-```
-
-## To Start
-Before running, make sure you have created a `Logs` folder in your `Documents` folder.\
-The script can be run with
-```batch
-C:\Path\to\python.exe C:\path\to\time_logger.py
-```
-(Files may not be on C drive)
-
-To use Windows Task Scheduler to autostart up toon login, open Task Scheduler, click `Create New Task`, and name it something appropriate.\
-Set the trigger to be `At log on`.\
-Make the action `Start a program`. Put the path to `python.exe` in the `Program/script` spot.\
-In the `Add arguments` spot add the path to `time-logger.py`.\
-Change `Conditions` so that it executes regardless of whether machine is plugged in or running off battery.
-
-The time-logger terminal should open on launch.
+## Dependencies
+These scripts were written to run in restrictive Windows environments common to company-issued machines.\
+`v0` requires no dependencies outside of those built-in to `Python` (`time` and `os`).\
+`v1` requires the same dependencies as `v0`, `importlib.machinery` and `importlib.util` (both of which are built-in to `Python`). It also has two optional features that depend on `subprocess` (built-in to `Python`) and `win10toast` (which must be installed).
