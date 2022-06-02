@@ -30,7 +30,7 @@ NOTIF_DURATION: float = 5       # Duration for notification in seconds
 SOUND: bool = True              # Give an audible que
 PATH_TO_SOUND: str = None       # Path to sound-file to be played (default will be bell)
 ```
-Of note here, use of the `NOTIF` feature requires having installed [https://pypi.org/project/win10toast/](win10toast).\
+Of note here, use of the `NOTIF` feature requires having installed [win10toast](https://pypi.org/project/win10toast/).\
 Default Windows sounds can be found under`C:\\Windows\\Media`. Should a sound file not be provided (or not exist) the default Windows bell-sound (`C:\\Windows\\Media\\Windows Foreground.wav`) will be played.\
 Ensure that the `PATH_TO_LOGGER` variable in each trigger-script refers to `logger.py`.\
 
