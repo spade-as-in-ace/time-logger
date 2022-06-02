@@ -32,7 +32,7 @@ PATH_TO_SOUND: str = None       # Path to sound-file to be played (default will 
 ```
 Of note here, use of the `NOTIF` feature requires having installed [win10toast](https://pypi.org/project/win10toast/).\
 Default Windows sounds can be found under`C:\Windows\Media`. Should a sound file not be provided (or not exist) the default Windows bell-sound (`C:\Windows\Media\Windows Foreground.wav`) will be played.\
-Ensure that the `PATH_TO_LOGGER` variable in each trigger-script refers to `logger.py`.\
+Ensure that the `PATH_TO_LOGGER` variable in each trigger-script refers to `logger.py`.
 
 The `startup.py` and `shutdown.py` scripts provided do not allow for a user to save a message. `shutdown.py` is set to force the machine to shutdown after 30 seconds (ensure all work is saved).
 
@@ -65,7 +65,7 @@ Change `Conditions` so that it executes regardless of whether machine is plugged
 The time-logger console should open on launch.
 
 ### Key-binds
-This version of the script uses a "trigger" script to log an event. The ideal method to launch a trigger-script would be to bind it to some key-combination (e.g. `ctrl+alt+e` to launch a script for logging a specific kind of event). There is a way to do this, however it is a tad bit convoluted.\
+This version of the script uses a "trigger" script to log an event. The ideal method to launch a trigger-script would be to bind it to some key-combination (e.g. `ctrl+alt+e` to launch a script for logging a specific kind of event). There is a way to do this, however it is a tad bit convoluted.
 1. Set up desired trigger-scripts (`trigger.py` is provided as a generic example)
 2. Create a shortcut for each script (i.e. right-click the script and select "Create shortcut")
 3. Apply a key-bind to the shortcut (right-click on the shortcut, click in the field where it says "Shortcut key", enter desired key-combination, and select "Apply"
