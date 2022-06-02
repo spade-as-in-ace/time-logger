@@ -1,5 +1,5 @@
 # Time Logger
-Simple script for logging work hours
+Simple script for logging events on Windows machines.
 
 ## Usage
 This was written to run in the restrictive Windows environment common to company-issued boxes.\
